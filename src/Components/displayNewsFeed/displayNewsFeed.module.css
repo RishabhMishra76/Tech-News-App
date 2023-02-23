@@ -136,10 +136,11 @@ option:checked {
 @media (max-width: 768px) {
   .tiles {
     grid-template-columns: repeat(1, 100%);
-    height: calc(100vh - 14rem);
+    height: calc(100vh - 15rem);
   }
 
   .paginationSelector {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    position: inherit;
   }
 }
