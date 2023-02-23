@@ -1,0 +1,145 @@
+.container {
+  margin: 2rem 2rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: #ffffff;
+  background-color: #102039;
+  margin-top: 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Anton-Regular, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.headerIcon {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  overflow: auto;
+  scroll-behavior: smooth;
+  height: calc(100vh - 11rem);
+  margin-bottom: 1rem;
+}
+
+.nextButton {
+  width: 8rem;
+  height: 2rem;
+  color: #102039;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.nextButton:hover {
+  color: #ffffff;
+  background-color: #102039;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+.pageButton {
+  height: 2rem;
+  width: 2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-right: 0.1rem;
+  border-radius: 0.25rem;
+}
+
+.pageButtonSelected {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  margin-right: 0.1rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  background-color: #102039;
+}
+
+.pageButton:hover {
+  color: #ffffff;
+  background-color: #102039;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+.pageButton:last-child {
+  margin-right: 1rem;
+}
+
+/* Style the select element */
+select {
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  background-position: center right;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+/* Style the selected option */
+option:checked {
+  background-color: #1DCA40;
+  color: #fff;
+}
+
+
+.tiles::-webkit-scrollbar {
+  display: none;
+}
+
+.footerButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationSelector {
+  position: absolute;
+  right: 3rem;
+  bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .tiles {
+    grid-template-columns: repeat(1, 100%);
+    height: calc(100vh - 14rem);
+  }
+
+  .paginationSelector {
+    margin-top: 2rem;
+  }
+}
